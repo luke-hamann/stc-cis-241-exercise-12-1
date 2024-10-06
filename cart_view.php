@@ -9,7 +9,7 @@
         <h1>My Guitar Shop</h1>
     </header>
     <main>
-
+        <p><?php echo session_id(); ?></p>
         <h1>Your Cart</h1>
         <?php if (empty($_SESSION['cart12']) || count($_SESSION['cart12']) == 0) : ?>
             <p>There are no items in your cart.</p>
